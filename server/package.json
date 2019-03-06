@@ -1,0 +1,23 @@
+{
+  "name": "try-generate-document-thumbnail-server",
+  "version": "1.0.0",
+  "main": "src/server.js",
+  "scripts": {
+    "serve": "node lib/server.js",
+    "build": "babel src -d lib",
+    "develop": "nodemon --exec babel-node src/server.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "4.16.4",
+    "express-fileupload": "1.1.1-alpha.3",
+    "gm": "1.23.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.2.3",
+    "@babel/core": "7.3.4",
+    "@babel/node": "7.2.2",
+    "@babel/preset-env": "7.3.4",
+    "nodemon": "1.18.10"
+  }
+}
