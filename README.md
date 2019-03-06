@@ -1,13 +1,23 @@
 # try-generate-document-thumbnail
 
 ## 🚀 Quick start
--  **View your site locally**
+### Server
+-  **Start server locally**
     ```
+    cd server
     yarn develop
     ```
 
--  **View the production site locally**
+-  **Start production server locally**
     ```
+    cd server
     yarn build
+    yarn serve
+    ```
+
+### Client
+-  **Open test client**
+    ```
+    cd client
     yarn serve
     ```
