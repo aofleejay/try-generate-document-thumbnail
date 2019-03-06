@@ -1,0 +1,1 @@
+# try-generate-document-thumbnail
