@@ -12,6 +12,7 @@ app.use(fileUpload({
 
 app.post('/files', (req, res) => {
   gm(req.files.document.data)
+    .selectFrame(0)
     .toBuffer('jpg', (error, buffer) => {
       if (!error) {
         res.setHeader('Content-disposition', `inline; filename*=UTF-8''thumbnail.jpg`)
