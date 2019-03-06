@@ -2,6 +2,11 @@
 
 ## 🚀 Quick start
 ### Server
+-  **Install dependencies**
+    ```
+    brew install imagemagick
+    brew install graphicsmagick
+    ```
 -  **Start server locally**
     ```
     cd server
