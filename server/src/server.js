@@ -13,6 +13,11 @@ app.use(
   })
 )
 
+/**
+ * Get image by uploading file.
+ * @param {file} file - Pdf file.
+ * @returns {buffer} Generated image.
+ */
 app.post('/files', (req, res) => {
   gm(req.files.document.data)
     .selectFrame(0)
@@ -29,6 +34,11 @@ app.post('/files', (req, res) => {
     })
 })
 
+/**
+ * Get image by send url.
+ * @param {string} url - Url of pdf file.
+ * @returns {buffer} Generated image.
+ */
 app.get('/files', (req, res) => {
   const { url } = req.query
   axios
