@@ -1,0 +1,9 @@
+*.log
+
+.babelrc
+.dockerignore
+.gitignore
+.prettierrc
+Dockerfile
+docker-compose.yml
+node_modules
